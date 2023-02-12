@@ -1,31 +1,106 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ejercicios</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ejercicios</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
   <body class="container">
     <h1>Ejercicios</h1>
-    <hr>
-    <section >
-        <h2>1. Pedir nombre al usuario y saludarlo.</h2>
-        <div id="liveAlertPlaceholder"></div>
-        <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Escribe tu nombre</label>
-              <input type="email" class="form-control" id="name" aria-describedby="nameHelp">
-            </div>
-            <button type="submit" class="btn btn-primary">Saludar</button>
-          </form>
+    <!-- // Ejercicio 1: Pedir nombre al usuario y saludarlo. -->
+    <section>
+      <h5>1. Pedir nombre al usuario y saludarlo.</h5>
+      <h3 id="liveAlertPlaceholder"></h3>
+      <form id="exer1Form">
+        <div class="mb-3">
+          <label class="form-label">Escribe tu nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            aria-describedby="nameHelp"
+            name="name"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary" id="liveAlertBtn">
+          Saludar
+        </button>
+      </form>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- // Ejercicio 2: Pedir edad al usuario y responder si es o no es mayor de edad. -->
+    <section>
+      <h5>2. Pedir edad al usuario y responder si es o no es mayor de edad.</h5>
+      <div id="liveAlertPlaceholder2"></div>
+      <form id="form2">
+        <div class="mb-3">
+          <label for="edad" class="form-label"
+            >Que edad tienes<span class="text-danger">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="edad"
+            aria-describedby="numberHelp"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+    </section>
+    <!-- Ejercicio 3. Pedir nombre y edad al usuario. Si se llama pepita y es mayor de edad permitir el ingreso a la sala de espera #1.
+        Si se llama pepita y es menor de edad permitir el ingreso a la sala #2.
+        Si no es pepita pero es mayor de edad ingresar a la sala #3.
+        Si no se llama pepita y no es mayor de edad ingresar a la sala #4.-->
+    <section>
+      <h5>3. Ingresa a la sala</h5>
+      <h6>
+        <ul>
+          <li>
+            Pedir nombre y edad al usuario. Si se llama pepita y es mayor de
+            edad permitir el ingreso a la sala de espera #1.
+          </li>
+          <li>
+            Si se llama pepita y es menor de edad permitir el ingreso a la sala
+            #2.
+          </li>
+          <li>Si no es pepita pero es mayor de edad ingresar a la sala #3.</li>
+          <li>
+            Si no se llama pepita y no es mayor de edad ingresar a la sala #4.
+          </li>
+        </ul>
+      </h6>
+      <div id="liveAlertPlaceholder3"></div>
+      <form id="form3">
+        <div class="mb-3">
+          <label for="username3" class="form-label"
+            >Nombre<span class="text-danger">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="username3"
+            aria-describedby="nameHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="edad3" class="form-label"
+            >Ingresa tu edad<span class="text-danger">*</span></label
+          >
+          <input type="number" class="form-control" id="edad3" />
+        </div>
+        <button type="submit" class="btn btn-primary">Verificar</button>
+      </form>
+    </section>
+
+    <script src="./javascript/ejercicios.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
-
-    
-
-
-
-
-
